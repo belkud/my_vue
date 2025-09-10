@@ -16,6 +16,7 @@ function showButton() {
 </script>
 
 <template>
+    <slot></slot>
     <h1 style="color: red;">AddFile</h1>
 
 

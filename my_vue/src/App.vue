@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import { ref  } from "vue";
 
-import AddFile from "./components/AddFile.vue";
-import HelloWorld from './components/HelloWorld.vue'
-
+// import AddFile from "./components/AddFile.vue";
+// import HelloWorld from './components/HelloWorld.vue'
+import CreateRandomNums from "./components/CreateRandomNums.vue";
+import ShowMouseCoordinates from "./components/ShowMouseCoordinates.vue";
+import ButtonHideShowText from "./components/ButtonHideShowText.vue";
 </script>
 
 <template>
@@ -10,9 +13,34 @@ import HelloWorld from './components/HelloWorld.vue'
 
 
 
-  <div>
     
-    <AddFile></AddFile> <!-- //! первый способ записи компонента -->
+    <create-random-nums>
+      <!-- <h3>Через слот добавили тег</h3> -->
+    </create-random-nums>
+<hr>
+<br>
+<br>
+
+<button-hide-show-text/>
+<hr>
+<br>
+<br>
+
+
+<show-mouse-coordinates/>
+<hr>
+<br>
+<br>
+
+<show-mouse-coordinates/>
+
+
+
+
+    <!-- <AddFile> -->
+        <!-- <div>Файл 1</div> -->
+
+    <!-- </AddFile> //! первый способ записи компонента -->
     
     
     <!-- <AddFile/> //! второй способ записи компонента (сокращенный) -->
@@ -20,14 +48,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
     
     
-    <a href="https://vite.dev" target="_blank">
+    <!-- <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    </a> -->
+  <!-- <HelloWorld msg="Vite + Vue" /> -->
 
 </template>
 
