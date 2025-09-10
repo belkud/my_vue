@@ -32,7 +32,6 @@ import ButtonHideShowText from "./components/ButtonHideShowText.vue";
 <br>
 <br>
 
-<show-mouse-coordinates/>
 
 
 
