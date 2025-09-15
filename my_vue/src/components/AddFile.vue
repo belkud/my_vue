@@ -13,9 +13,15 @@ function showButton() {
         
 }
 
+const checked = ref('')
+
+
 </script>
 
 <template>
+
+    
+
     <slot></slot>
     <h1 style="color: red;">AddFile</h1>
 
@@ -24,7 +30,6 @@ function showButton() {
     <button  @click="showButton() " :style="'opacity:' +opacity"> Нажми меня</button>
 
     <div  class="col" >Инфомация с файла AddFile</div>
-
 
 <br>
 <br>

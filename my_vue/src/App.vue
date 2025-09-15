@@ -1,16 +1,37 @@
 <script setup lang="ts">
 import { ref  } from "vue";
 
-// import AddFile from "./components/AddFile.vue";
+import AddFile from "./components/AddFile.vue";
 // import HelloWorld from './components/HelloWorld.vue'
 import CreateRandomNums from "./components/CreateRandomNums.vue";
 import ShowMouseCoordinates from "./components/ShowMouseCoordinates.vue";
 import ButtonHideShowText from "./components/ButtonHideShowText.vue";
+import ProgressBar from "./components/ProgressBar.vue";
+import NewsList from "./components/NewsList.vue";
 </script>
+
+
+
 
 <template>
 
+<progress-bar/>
+<hr>
+<br>
+<br>
 
+
+<news-list/>
+<hr>
+<br>
+<br>
+
+
+
+
+
+
+<!-- <add-file/> -->
 
 
     
