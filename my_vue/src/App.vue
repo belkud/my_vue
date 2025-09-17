@@ -1,19 +1,31 @@
 <script setup lang="ts">
-import { ref  } from "vue";
 
-import AddFile from "./components/AddFile.vue";
+// import AddFile from "./components/AddFile.vue";
 // import HelloWorld from './components/HelloWorld.vue'
 import CreateRandomNums from "./components/CreateRandomNums.vue";
 import ShowMouseCoordinates from "./components/ShowMouseCoordinates.vue";
 import ButtonHideShowText from "./components/ButtonHideShowText.vue";
 import ProgressBar from "./components/ProgressBar.vue";
 import NewsList from "./components/NewsList.vue";
+import ThirdHomeTask from "./components/ThirdHomeTask.vue";
+
+
+
 </script>
 
 
 
 
 <template>
+
+
+
+<third-home-task/>
+<hr>
+<br>
+<br>
+
+
 
 <progress-bar/>
 <hr>
@@ -93,4 +105,6 @@ import NewsList from "./components/NewsList.vue";
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
+
+
 </style>

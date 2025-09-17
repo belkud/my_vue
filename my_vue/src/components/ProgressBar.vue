@@ -33,7 +33,16 @@ const users = ([
 <template >
     <div v-for="user in users">Имя: {{ user.name }}, Возраст: {{ user.age }}</div>
 
-    <span v-for="n in 1000">{{ n }}</span>
+<div v-for="(user, index) in users" >
+  {{ index +1 }} : {{ user }}
+
+  <div> {{ user }}</div>
+
+
+</div>
+
+
+<span v-for="n in 10">{{ n }}</span>
     
     <button @click="awesome = !awesome; console.log(awesome)">Переключить</button>
     
