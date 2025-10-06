@@ -5,7 +5,7 @@ import { ref } from 'vue'
 
 const random = ref()
 
-console.log(random)
+// console.log(random)
 </script>
 
 <template>

@@ -10,13 +10,28 @@ import NewsList from "./components/NewsList.vue";
 import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 
 
-
+import UsersForum from "./components/UsersForum.vue";
 </script>
 
 
 
 
 <template>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+<users-forum/>
+<hr>
+<br>
+<br>
 
 
 
