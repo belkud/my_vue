@@ -14,12 +14,28 @@ import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 // одна '.' - ищет в этой папке
 // две '..' - ищет в родительской папке
 import UsersForum from "./components/UsersForum.vue";
+import HomeWork from "./components/HomeWork.vue";
+// import Vue from 'vue'
+// import VueRouter from 'vue-router'
+
+
+
+
 </script>
 
 
 
 
 <template>
+  <div style="display: flex; margin: 10px; gap: 25px;">
+    <RouterLink to="/">На главную</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+  </div>
+
+<RouterView></RouterView>
+
+
+  <home-work/>
   <hr>
   <br>
   <br>
