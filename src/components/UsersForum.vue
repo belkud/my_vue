@@ -27,6 +27,18 @@
 
 <div>{{ acc }}</div>
 
+<br>
+<br>
+<br>
+<br>
+<form action="">
+
+    <div id="testId">Сюда отправляем {{ addText }}</div>
+    <input type="text" v-model.lazy="addText">
+    <br>
+    <input type="submit" id="testButton" @click.prevent="testFunc">
+</form>
+
 
 </template>
 
@@ -37,33 +49,52 @@
 import { ref, onBeforeMount, onMounted, onBeforeUpdate, 
     onUpdated, onBeforeUnmount, onUnmounted } from "vue";
 
+
+
+// let testId = document.querySelector('testId') as HTMLDivElement
+// console.log(testId);
+
+let addText = ref() as any
+addText.value = '<div>123</div>'
+
+function testFunc() {
+    // console.log('df');
+ 
+    
+
+}
+
+
+
+
+
 let acc = ref()
 
 
 onMounted(()=> {
-    console.log('Примонтировано');
+    // console.log('Примонтировано');
 })
 
 onBeforeMount(()=> {
-    console.log('До примонтирования');
-    acc.value = 1001
+    // console.log('До примонтирования');
+    // acc.value = 1001
 })
 
 
 onUpdated(()=> {
-    console.log('Изменения в dom дереве');
+    // console.log('Изменения в dom дереве');
 })
 
 onUnmounted(()=> {
-    console.log('onUnmounted'); // очищает колбэки (для более быстрой работы устройства)
+    // console.log('onUnmounted'); // очищает колбэки (для более быстрой работы устройства)
 })
 
 onBeforeUnmount(()=> {
-    console.log('onBeforeUnmount');
+    // console.log('onBeforeUnmount');
 })
 
 onBeforeUpdate(()=> {
-    console.log('onBeforeUpdate');
+    // console.log('onBeforeUpdate');
 })
 
 
@@ -93,6 +124,9 @@ function sendMessage () {
     today.value = date.toLocaleString().split(',').reverse().join(', ') 
     
 }
+
+
+
 
 
 

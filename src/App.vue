@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+
+
 // import AddFile from "./components/AddFile.vue";
 // import HelloWorld from './components/HelloWorld.vue'
 import CreateRandomNums from "./components/CreateRandomNums.vue";
@@ -9,7 +11,8 @@ import ProgressBar from "./components/ProgressBar.vue";
 import NewsList from "./components/NewsList.vue";
 import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 
-
+// одна '.' - ищет в этой папке
+// две '..' - ищет в родительской папке
 import UsersForum from "./components/UsersForum.vue";
 </script>
 

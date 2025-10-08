@@ -23,7 +23,7 @@ window.addEventListener('scroll', (e:any)=> {
     //     showButton.value=0
     // }
 
-    e.currentTarget.scrollY>200 ? showButton.value=1 : showButton.value=0
+    e.currentTarget.scrollY>1000 ? showButton.value=1 : showButton.value=0
 
 })
         
@@ -48,7 +48,7 @@ function say(message:any) {
 <button style="position: sticky; top: 100px; left: 199px;" @click="($event)=>console.log($event.offsetY)">Скажи пока 2</button> 
 
 <!-- <button :style="'opacity:' +showButton, 'fontSize :' +1.5 + 'em'" id="moveUp" @click="upPage">Наверх</button> -->
-<button style="" :style="{opacity: showButton, fontSize : '1.5em'}" id="moveUp" @click="upPage">Наверх</button>
+<button  :style="{opacity: showButton, fontSize : '1.5em'}" id="moveUp" @click="upPage">Наверх</button>
     <button @click="acc+=10" >Click me {{ acc.toString().split('').reverse().join('') }}</button>
     <br>
     <br>
