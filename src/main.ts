@@ -6,5 +6,8 @@ import {router} from '../router' // Импортируйте файл роуте
 let app = createApp(App)
 app.use(router)
 app.mount('#app')
+// app.component ('BookList', BookList)
+
+
 
 

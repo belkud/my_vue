@@ -3,7 +3,7 @@
 
 
 // import AddFile from "./components/AddFile.vue";
-// import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue'
 import CreateRandomNums from "./components/CreateRandomNums.vue";
 import ShowMouseCoordinates from "./components/ShowMouseCoordinates.vue";
 import ButtonHideShowText from "./components/ButtonHideShowText.vue";
@@ -17,6 +17,7 @@ import UsersForum from "./components/UsersForum.vue";
 import HomeWork from "./components/HomeWork.vue";
 // import Vue from 'vue'
 // import VueRouter from 'vue-router'
+// import BookList from "./components/BookList.vue";
 
 
 
@@ -32,9 +33,21 @@ import HomeWork from "./components/HomeWork.vue";
     <RouterLink to="/about">About</RouterLink>
   </div>
 
+
+
+ <HelloWorld msg="Vite + Vue" title=""/>
+
+
+
+
+
+<book-list/>
+
+
 <RouterView></RouterView>
 
 
+  <BookList/>
   <home-work/>
   <hr>
   <br>
@@ -120,7 +133,7 @@ import HomeWork from "./components/HomeWork.vue";
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a> -->
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
+ 
 
 </template>
 

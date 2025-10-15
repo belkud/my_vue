@@ -23,9 +23,9 @@ let title = ref('') as any
 
 window.addEventListener('mousemove', (e:any)=> {
     title.value = e.clientY
-    console.log(e.clientY);  
-    console.log(e.offsetY);  
-    console.log(e);  
+    // console.log(e.clientY);  
+    // console.log(e.offsetY);  
+    // console.log(e);  
 })
 
 
