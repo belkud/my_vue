@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import { ref } from "vue";
 
 
 // import AddFile from "./components/AddFile.vue";
@@ -13,11 +13,12 @@ import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 
 // одна '.' - ищет в этой папке
 // две '..' - ищет в родительской папке
-import UsersForum from "./components/UsersForum.vue";
-import HomeWork from "./components/HomeWork.vue";
+// import UsersForum from "./components/UsersForum.vue";
+// import HomeWork from "./components/HomeWork.vue";
 // import Vue from 'vue'
 // import VueRouter from 'vue-router'
 // import BookList from "./components/BookList.vue";
+
 
 
 
@@ -28,14 +29,15 @@ import HomeWork from "./components/HomeWork.vue";
 
 
 <template>
-  <div style="display: flex; margin: 10px; gap: 25px;">
-    <RouterLink to="/">На главную</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
+  <div id="router">
+    <RouterLink class="navlink" to="/">На главную</RouterLink>
+    <RouterLink class="navlink" to="/about">About</RouterLink>
+    <RouterLink class="navlink" to="/TestPage">Test</RouterLink>
   </div>
 
 
 
- <HelloWorld msg="Vite + Vue" title=""/>
+ <!-- <HelloWorld msg="Vite + Vue" title=""/> -->
 
 
 
@@ -153,5 +155,15 @@ import HomeWork from "./components/HomeWork.vue";
   filter: drop-shadow(0 0 2em #42b883aa);
 }
 
+#router {
+  display: flex; 
+  margin: 10px; 
+  gap: 25px;
+}
+
+
+.navlink:hover {
+  background-color: rgb(255, 162, 0, .8)
+}
 
 </style>
