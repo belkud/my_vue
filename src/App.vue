@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 
 // import AddFile from "./components/AddFile.vue";
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import CreateRandomNums from "./components/CreateRandomNums.vue";
 import ShowMouseCoordinates from "./components/ShowMouseCoordinates.vue";
 import ButtonHideShowText from "./components/ButtonHideShowText.vue";
@@ -13,16 +13,68 @@ import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 
 // одна '.' - ищет в этой папке
 // две '..' - ищет в родительской папке
-// import UsersForum from "./components/UsersForum.vue";
-// import HomeWork from "./components/HomeWork.vue";
+import UsersForum from "./components/UsersForum.vue";
+import HomeWork from "./components/HomeWork.vue";
 // import Vue from 'vue'
 // import VueRouter from 'vue-router'
-// import BookList from "./components/BookList.vue";
+import BookList from "./components/BookList.vue";
+
+const mass = [1, 2, 3, 4, 5]
+console.log(Object.keys(mass).length);
+
+mass.push(6)
+let test = mass.map(e=> e*2)
+console.log(test);
+
+// mass.value.filter(e=>console.log(e));
+
+const original = {
+  name: "John",
+  age: 30,
+  address: {
+    city: "Moscow",
+    street: "Lenina"
+  },
+  hobbies: ["reading", "sports"]
+};
+
+const dublicate = {...original}
+dublicate.name = 'Peter'
+dublicate.address.city = 'SPB'
+
+original.address.city = 'MSC'
+console.log(dublicate.address.city);
+
+original.name = 'Ivan'
+console.log(dublicate.name);
+
+const deepCopy2 = structuredClone(original);
+deepCopy2.name = 'Light'
+original.name = 'Original'
+console.log(deepCopy2);
+
+
+type User = {
+  id: number;
+  name: string;
+  email?: string; // Необязательное свойство
+}
+
+const user:User = {
+  id : 23,
+  name : 'Jonn',
+  // email : 23,
+}
+
+//! кортежи
+type coordinate = [x:number, y:number]
+let mouseCoord:coordinate = [10, 20]
+console.log(mouseCoord[0]);
+ 
 
 
 
-
-
+ 
 </script>
 
 
@@ -49,7 +101,7 @@ import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 <RouterView></RouterView>
 
 
-  <BookList/>
+ 
   <home-work/>
   <hr>
   <br>
@@ -89,9 +141,6 @@ import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 
 
 
-
-
-
 <!-- <add-file/> -->
 
 
@@ -116,6 +165,9 @@ import ThirdHomeTask from "./components/ThirdHomeTask.vue";
 
 
 
+
+
+ <BookList/>
 
 
     <!-- <AddFile> -->

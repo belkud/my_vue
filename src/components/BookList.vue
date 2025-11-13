@@ -8,7 +8,7 @@ let books = ref([
 
 function clickEl(e:any) {
     const el = e.target
-    console.log(e.target);
+    // console.log(e.target);
     // console.log(e.currentTarget);
     
     el.style.background = 'red'
